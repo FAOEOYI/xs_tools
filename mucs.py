@@ -48,6 +48,7 @@ def create_user_project_cmakelists(user_project_dir, project_name):
 # endif()
 
 set(SOURCES "${{SOURCES}}" PARENT_SCOPE)
+set(PUBLIC_HEADER "${{PUBLIC_HEADER}}" PARENT_SCOPE)
 '''
     
     with open(cmake_file, 'w', encoding='utf-8') as f:
